@@ -1,10 +1,10 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-slim
 
 # Install Postgres and configure a username + password
 USER root
 
-ARG DB_USERNAME=$DB_USERNAME
-ARG DB_PASSWORD=$DB_PASSWORD
+ARG DB_USERNAME=testuser
+ARG DB_PASSWORD=testpass
 
 RUN apt update -y && apt install postgresql postgresql-contrib -y
 
@@ -34,4 +34,4 @@ RUN pip install -r requirements.txt
 COPY ./app .
 
 # Start the database and Flask application
-CMD service postgresql start && python app.py
+CMD ["sh", "-c", "service postgresql start && python app.py"]
