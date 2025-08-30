@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
 # Install dependencies needed to compile Python
 RUN apt update && apt install wget xz-utils make build-essential zlib1g-dev -y
@@ -15,4 +15,4 @@ RUN ln -s $(which python3) /usr/local/bin/python
 
 RUN echo "print('hello!')" > /say_hello.py
 
-ENTRYPOINT python /say_hello.py
+ENTRYPOINT ["python", "/say_hello.py"]
