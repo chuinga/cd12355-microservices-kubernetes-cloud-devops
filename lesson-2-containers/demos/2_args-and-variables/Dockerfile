@@ -9,4 +9,4 @@ RUN echo "import os" > /say_something.py
 RUN echo "print('Build Number: $BUILD_NUMBER')" >> /say_something.py
 RUN echo "print(os.getenv('WORDS'))" >> /say_something.py
 
-ENTRYPOINT python /say_something.py
+ENTRYPOINT ["python", "/say_something.py"]
