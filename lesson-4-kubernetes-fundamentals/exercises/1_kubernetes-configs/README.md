@@ -12,7 +12,7 @@ Depending on the instance types used in your cluster, your may need to provision
 ### 1. Apply the Existing Configs
 Create the resources in your Kubernetes environment. Multiple deployments can be applied by running:
 ```bash
-kubectl -f apply deployment/
+kubectl apply -f deployment/
 ```
 ### 2. Create User API Service and Deployment
 Create a new file called user-api.yaml that contains the service and deployment definitions for the application.
