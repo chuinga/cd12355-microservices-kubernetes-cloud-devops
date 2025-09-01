@@ -20,7 +20,7 @@ Create a new file called user-api.yaml that contains the service and deployment 
 ### 3. Apply the User Service and Deployment
 Create the service and deployment by applying your configurations
 ```bash
-kubectl -f apply user-api.yaml
+kubectl apply -f user-api.yaml
 ```
 
 You can review the status of your apply with the following commands:
