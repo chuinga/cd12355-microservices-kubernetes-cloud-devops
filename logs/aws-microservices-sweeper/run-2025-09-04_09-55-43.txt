@@ -1,0 +1,259 @@
+📜 Logging to ./logs/aws-microservices-sweeper/run-2025-09-04_09-55-43.txt
+🔒 Checking AWS identity...
+🚨 You are logged in as:
+👤 User:       kubernetes
+🔗 ARN:        arn:aws:iam::738975265234:user/kubernetes
+🏢 Account ID: 738975265234
+🌍 Default region: us-east-1
+
+❓ Is this the RIGHT ACCOUNT to sweep potentially billable resources? (y/N): 🌐 Sweep ALL regions? (Recommended if you’re unsure where things are) (y/N): 📍 Gathering regions...
+🗺️ Regions to sweep: ap-south-1	eu-north-1	eu-west-3	eu-west-2	eu-west-1	ap-northeast-3	ap-northeast-2	ap-northeast-1	ca-central-1	sa-east-1	ap-southeast-1	ap-southeast-2	eu-central-1	us-east-1	us-east-2	us-west-1	us-west-2
+
+🧭 Route 53: Delete ALL hosted zones & health checks? (hosted zones cost monthly) (y/N): ✅ No health checks.
+✅ No hosted zones.
+🌍 CloudFront: Disable & DELETE ALL distributions? (y/N): 
+=================================================================
+🌎 REGION: ap-south-1
+=================================================================
+🧹 Starting regional sweeps in ap-south-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ap-south-1 that your credentials can access? (y/N): ✅ Finished regional sweep for ap-south-1
+
+=================================================================
+🌎 REGION: eu-north-1
+=================================================================
+🧹 Starting regional sweeps in eu-north-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in eu-north-1 that your credentials can access? (y/N): ✅ Finished regional sweep for eu-north-1
+
+=================================================================
+🌎 REGION: eu-west-3
+=================================================================
+🧹 Starting regional sweeps in eu-west-3 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in eu-west-3 that your credentials can access? (y/N): ✅ Finished regional sweep for eu-west-3
+
+=================================================================
+🌎 REGION: eu-west-2
+=================================================================
+🧹 Starting regional sweeps in eu-west-2 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in eu-west-2 that your credentials can access? (y/N): ✅ Finished regional sweep for eu-west-2
+
+=================================================================
+🌎 REGION: eu-west-1
+=================================================================
+🧹 Starting regional sweeps in eu-west-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in eu-west-1 that your credentials can access? (y/N): ✅ Finished regional sweep for eu-west-1
+
+=================================================================
+🌎 REGION: ap-northeast-3
+=================================================================
+🧹 Starting regional sweeps in ap-northeast-3 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ap-northeast-3 that your credentials can access? (y/N): ✅ Finished regional sweep for ap-northeast-3
+
+=================================================================
+🌎 REGION: ap-northeast-2
+=================================================================
+🧹 Starting regional sweeps in ap-northeast-2 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ap-northeast-2 that your credentials can access? (y/N): ✅ Finished regional sweep for ap-northeast-2
+
+=================================================================
+🌎 REGION: ap-northeast-1
+=================================================================
+🧹 Starting regional sweeps in ap-northeast-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ap-northeast-1 that your credentials can access? (y/N): ✅ Finished regional sweep for ap-northeast-1
+
+=================================================================
+🌎 REGION: ca-central-1
+=================================================================
+🧹 Starting regional sweeps in ca-central-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ca-central-1 that your credentials can access? (y/N): ✅ Finished regional sweep for ca-central-1
+
+=================================================================
+🌎 REGION: sa-east-1
+=================================================================
+🧹 Starting regional sweeps in sa-east-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in sa-east-1 that your credentials can access? (y/N): ✅ Finished regional sweep for sa-east-1
+
+=================================================================
+🌎 REGION: ap-southeast-1
+=================================================================
+🧹 Starting regional sweeps in ap-southeast-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ap-southeast-1 that your credentials can access? (y/N): ✅ Finished regional sweep for ap-southeast-1
+
+=================================================================
+🌎 REGION: ap-southeast-2
+=================================================================
+🧹 Starting regional sweeps in ap-southeast-2 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in ap-southeast-2 that your credentials can access? (y/N): ✅ Finished regional sweep for ap-southeast-2
+
+=================================================================
+🌎 REGION: eu-central-1
+=================================================================
+🧹 Starting regional sweeps in eu-central-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in eu-central-1 that your credentials can access? (y/N): ✅ Finished regional sweep for eu-central-1
+
+=================================================================
+🌎 REGION: us-east-1
+=================================================================
+🧹 Starting regional sweeps in us-east-1 ...
+☸️ EKS: Delete ALL clusters in us-east-1 (includes nodegroups/Fargate/addons)? (y/N): EKS cluster: demo
+   ⏳ Waiting EKS deps: NGs=0, Fargate=0, AddOns=0
+
+An error occurred (InvalidParameterException) when calling the DeleteCluster operation: The parameter name contains invalid characters. It should conform to the regular expression "^[0-9A-Za-z][A-Za-z0-9-_]*"In other words, it should start with a number or letter, and can contain numbers, letters, dashes, and underscores.
+⚠️ Failed to initiate delete for demo
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+🖥️ EC2: Terminate ALL instances in us-east-1? (y/N): 
+An error occurred (UnauthorizedOperation) when calling the TerminateInstances operation: You are not authorized to perform this operation. User: arn:aws:iam::738975265234:user/kubernetes is not authorized to perform: ec2:TerminateInstances on resource: arn:aws:ec2:us-east-1:738975265234:instance/i-0f2a3003aca1d1b86 with an explicit deny in a resource-based policy. Encoded authorization failure message: OC61newI6l4fJk741TRoGOTgPJO2LNbG36bUcE2P42_WevOrGLyPVYx7cE-xXexmw-p3vdyb2eZrHVFnZYbbYyw5Y0WZywEaWO0YY12eXET9IGwk1tQm4JsDCKhLqCxVd6VUeKLsZxr4p7xbvvDxWiYREllGoj950Pjz8tGqD9uWkFqUh5qgE8D1Owu1ckzGccV1zJswIHb8JO2fqyjRy26uQfOCKl_TloZyjfB3ov7PdvWAwYcbwT1ylFIc5bqLvKyA28BnVlDzdvXt2wiM7MKSiJvgo8jcoyB1HPzyB2MbUlcoTsjNchGUiTQEmHbehLzWQ58iz6X_RpRWdKYgKKhfFJ0Lv_yj7UqUEEXIKD7TL7KSCPYHiCKymjTOVOGkkLaslDZ4U58bu8JZz7NdrAvN2G7H64rFtAXCa5Za1M5BQ1j_L4K03ijfSfLPt0dtrZttpJpdhqLACQEC8M1c463NNeWZUDnLGiteOjwGLwjqlPqorP5ePFPaRazo9gvgwDe7NQdp_u3Hn6Tn3sWYvJgPWNm8x5CYI9RHUmfQLLaxope_KmyCorXI-qm3Rfdb0o800Y3wPCtYYjaoYQ05yf-jnVkfr707tGh2V41EkaIhCP_TLc7vxjzRP9w4nExvsjC1gQnkF5eyIp9cyMH5ZEI8NnRybjq24s4k2x88tZ6xCpQ3bKhPDy1Qsgx9fvvlZFUWzjsDXGWwiwJvr39PfHt9v1HEanaMygOY768XWfcfue2noNmhGIwtZwrHPcDGh27yJrbrn3QE5rzZr4Tc6F4VWtw1J_2qEjQxxLhBYtuCZtYTag_yXbV0wcisEmCLkTig2jRbWQKloFcBEGdd_bV7Yxx2TfutxUE_uku62INOlVjNg0NBfk46M-CNDcMnL2MfBJeFFv4MWz9oJZnjHJvQUTZaX__QPBMwzCqzEgKla1I23Kyok5JxTMVQtVBiZoX7Kp5TmCk4Qujl9PKaYYI974hciNbFNB4BHUT-tg2Zy1uKib-NQlHmCjNghOlDJ--Rcw7N1OvaUpRD6j__dEb_UH5Z18hNLqSDQzS0uMvOHNGNFTUlyQAJQMYDo2Wy0eWyF01Azsh6RhyKLSrKfswRPReOrOcJ0XQKYkjAq4WsAmXl0M2dZQxtPEgGaQ58j13nUC7kycPux33JOqf8Gmwu3XlhEZwBPP2eVNUBcXnVRd3Coh9EmGEvtKc856MMC88ytGIQJNLNPhdaqu7Yq8LYxABZVqj5TcrYH3fYmDdPYP_ZypUtI0xnu4lr1-DLT0M43O15g7tPr_WtvHsmC41dHW5YdSg_LIMS67_hm_yehn5HVbkO30kgJAfPdqYFDpN8s7Yyi1qudQWbVwrvYeW-J99briLf1fVTS3PU1GQ3ct_JnjfOrFKWSloD1IafTRMOuAvvawvtlQqK_bJk4fk6ncLuy6w0l3YvTN0WY7O-ROYT1QXge-b0tNe_VN30kHknsATufeR2pSkDtx4RA1646bgbpSr7em6J-AKv_5rgjTTeew4qJ2pit0PSdlF8bHlzYTFGuEheBEC0tpy0QnTMsfn2AQwQIW4SOjsJ
+⚠️ Terminate call failed.
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in us-east-1 that your credentials can access? (y/N): 🔐 KMS: SCHEDULE deletion for ALL customer keys in us-east-1 (7-day minimum)? (y/N): ✅ Finished regional sweep for us-east-1
+
+=================================================================
+🌎 REGION: us-east-2
+=================================================================
+🧹 Starting regional sweeps in us-east-2 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in us-east-2 that your credentials can access? (y/N): ✅ Finished regional sweep for us-east-2
+
+=================================================================
+🌎 REGION: us-west-1
+=================================================================
+🧹 Starting regional sweeps in us-west-1 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in us-west-1 that your credentials can access? (y/N): ✅ Finished regional sweep for us-west-1
+
+=================================================================
+🌎 REGION: us-west-2
+=================================================================
+🧹 Starting regional sweeps in us-west-2 ...
+✅ No EKS clusters (or skipped).
+✅ No ECS clusters (or skipped).
+✅ No ECR repositories (or skipped).
+✅ No EC2 instances (or skipped).
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+✅ No unattached EBS volumes (or skipped).
+✅ No ALB/NLB (or skipped).
+🪣 S3: DELETE ALL buckets in us-west-2 that your credentials can access? (y/N): ✅ Finished regional sweep for us-west-2
+
+🎉 All requested sweeps completed.

@@ -1,0 +1,133 @@
+📜 Logging to ./logs/aws-microservices-sweeper/run-2025-09-04_12-17-13.txt
+🔒 Checking AWS identity...
+🚨 You are logged in as:
+👤 User:       kubernetes
+🔗 ARN:        arn:aws:iam::738975265234:user/kubernetes
+🏢 Account ID: 738975265234
+🌍 Default region: us-east-1
+
+🗺️ Regions to sweep:
+   - us-east-1
+🧹 Services to sweep:
+   - Route53
+   - CloudFront
+   - EKS
+   - ECS
+   - ECR
+   - EC2 instances
+   - EC2 Spot Fleets
+   - AutoScaling
+   - Launch Templates
+   - NAT Gateways
+   - Elastic IPs
+   - EBS Volumes
+   - EBS Snapshots
+   - AMIs
+   - ALB/NLB
+   - Target Groups
+   - Classic ELB
+   - VPC Endpoints
+   - Unattached ENIs
+   - RDS Instances
+   - RDS Clusters
+   - S3 Buckets
+   - KMS (schedule delete 7d)
+
+❓ FINAL CHECK: Proceed with sweeping the above in account 738975265234? (y/N): 🧭 Route53: purge health checks & hosted zones
+🌍 CloudFront: disable & delete distributions
+
+=================================================================
+🌎 REGION: us-east-1
+=================================================================
+🧹 Starting regional sweeps in us-east-1 ...
+EKS cluster: demo
+   ⏳ Waiting EKS deps: NGs=0, Fargate=0, AddOns=0
+{
+    "cluster": {
+        "name": "demo",
+        "arn": "arn:aws:eks:us-east-1:738975265234:cluster/demo",
+        "createdAt": "2025-09-01T17:22:01.380000+01:00",
+        "version": "1.33",
+        "endpoint": "https://4D16AED337CB98505B0B730FC3AABA94.gr7.us-east-1.eks.amazonaws.com",
+        "roleArn": "arn:aws:iam::738975265234:role/demo-eks-cluster-role",
+        "resourcesVpcConfig": {
+            "subnetIds": [
+                "subnet-0be898255a7f16638",
+                "subnet-0613b7db02895e68c"
+            ],
+            "securityGroupIds": [
+                "sg-0d4a6f50b2c1d510b"
+            ],
+            "clusterSecurityGroupId": "sg-0ce730542a0a5f73f",
+            "vpcId": "vpc-0ed85bf4125f63694",
+            "endpointPublicAccess": true,
+            "endpointPrivateAccess": false,
+            "publicAccessCidrs": [
+                "0.0.0.0/0"
+            ]
+        },
+        "kubernetesNetworkConfig": {
+            "serviceIpv4Cidr": "10.100.0.0/16",
+            "ipFamily": "ipv4",
+            "elasticLoadBalancing": {
+                "enabled": true
+            }
+        },
+        "logging": {
+            "clusterLogging": [
+                {
+                    "types": [
+                        "api",
+                        "audit",
+                        "authenticator",
+                        "controllerManager",
+                        "scheduler"
+                    ],
+                    "enabled": true
+                }
+            ]
+        },
+        "identity": {
+            "oidc": {
+                "issuer": "https://oidc.eks.us-east-1.amazonaws.com/id/4D16AED337CB98505B0B730FC3AABA94"
+            }
+        },
+        "status": "DELETING",
+        "certificateAuthority": {
+            "data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJQXRNMGN2RkNoUDh3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TlRBNU1ERXhOakl5TVRCYUZ3MHpOVEE0TXpBeE5qSTNNVEJhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUURjV29sdy9wUWh3SlFaTWNIR3RuUHprTDhSaUtNK2JFd2FpTmdWdDRiSW5QYTMxV1phQ25EaWlQQWwKUEM1OXBGTStKUFlHQ01iNEQxTEM4ZG1oSVluT1lZamhFclBVM0ErMElCNXc5YWJEK01EQ29tZDhWWWUxWktUNwpDREFZQ3Z5RE9ZbjdnTFhLbGVxbUhyRFRuUThlQkQ2VGVkc2lUSmF1WExTRi80dTcxK1FzdjYreDVJVm5DcDlOCllZNHpjUlFqUW9Nc29VQkg3eWZ0TmVzamVVTnk1QllYSW03c2xzbDJua0R6dGltVGZGUkc2QTlUbkt5dmVCRG0KZGJocVFZbDd5cUt1NVFVZFc5dHFNbU9ITW02Y0x0YjRNMytRNjh3VnRVdnF1V21laFhUaDRiSXB1bkRrdjlLYQp4dDZNYlkrVjNreTU5ZEVKS3VDSGx4RlFYZ3l2QWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJTM3FxR2IyaVIzYzYybWJRQSt3Mko4WmNyWGpqQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQnp2ZmxYeURFTQpwbXpoV1hRSzlDQ1MwU2ZFRm9IUXZLck5OTWx1c2V6V2ROWW5kQ0R4UEpMVU1ibS8zbkFhS1FMaXlSR0RsOGJECkVueitlRmxmNWk0N0dpdXdHVGNXdnZoUVdWVDlBU0dwQnM3a0IvNEhoNnpzL29TeXZ5NE5iN0NtVEVpa29RM1YKUDR4ZEJ2cEpJaEM2NGRRL2pYemlSZXh4bVpTTE9EajlQOXErL1FZcnQ0WktHblFNYUV4SVhlaXorZ04zTUhHdAptT0RXTEdzNTFaZTZVc1dLWnlVcVI2RCtEdkRNaUNCT3ZrdXZnYUF2bXFjVWg2Z1JpUHYrK25FQThvNzJ4bUFaCnN4b2FJWDRtSzVTSHE4VTQ3cDA5L1JpalFlZXNWOElHM1NQM205RnZUbFJMRjVZeWJYOFpHRWlXWkxiMlNVZFQKVlRFQzVaUzJZemI3Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+        },
+        "platformVersion": "eks.11",
+        "tags": {},
+        "accessConfig": {
+            "authenticationMode": "API"
+        },
+        "upgradePolicy": {
+            "supportType": "STANDARD"
+        },
+        "zonalShiftConfig": {
+            "enabled": false
+        },
+        "computeConfig": {
+            "enabled": true,
+            "nodePools": [
+                "general-purpose",
+                "system"
+            ],
+            "nodeRoleArn": "arn:aws:iam::738975265234:role/EMR_EC2_DefaultRole"
+        },
+        "storageConfig": {
+            "blockStorage": {
+                "enabled": true
+            }
+        }
+    }
+}
+✅ No ECR repositories.
+✅ No EC2 instances.
+✅ No NAT Gateways.
+✅ No EIPs.
+✅ No unattached EBS volumes.
+✅ No ALB/NLB.
+✅ Finished regional sweep for us-east-1
+
+🎉 All requested sweeps completed.

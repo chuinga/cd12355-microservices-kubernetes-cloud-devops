@@ -1,0 +1,174 @@
+📜 Logging to ./logs/aws-microservices-sweeper/run-2025-09-04_09-11-39.txt
+🔒 Checking AWS identity...
+🚨 You are logged in as:
+👤 User:       kubernetes
+🔗 ARN:        arn:aws:iam::738975265234:user/kubernetes
+🏢 Account ID: 738975265234
+🌍 Default region: us-east-1
+
+❓ Is this the RIGHT ACCOUNT to sweep potentially billable resources? (y/N): 🌐 Sweep ALL regions? (Recommended if you’re unsure where things are) (y/N): 🗺️ Regions to sweep: us-east-1
+
+🧭 Route 53: Delete ALL hosted zones & health checks? (hosted zones cost monthly) (y/N): ✅ No health checks.
+✅ No hosted zones.
+🌍 CloudFront: Disable & DELETE ALL distributions? (y/N): ✅ No CloudFront distributions.
+
+=================================================================
+🌎 REGION: us-east-1
+=================================================================
+🧹 Starting regional sweeps in us-east-1 ...
+☸️ EKS: Delete ALL clusters in us-east-1 (includes nodegroups/Fargate/addons)? (y/N): EKS cluster: demo
+{
+    "nodegroup": {
+        "nodegroupName": "demo-node-group",
+        "nodegroupArn": "arn:aws:eks:us-east-1:738975265234:nodegroup/demo/demo-node-group/a8cc831b-3f55-58d9-1e0d-3836212a7098",
+        "clusterName": "demo",
+        "version": "1.33",
+        "releaseVersion": "1.33.3-20250821",
+        "createdAt": "2025-09-01T17:57:39.627000+01:00",
+        "modifiedAt": "2025-09-04T09:12:12.312000+01:00",
+        "status": "DELETING",
+        "capacityType": "ON_DEMAND",
+        "scalingConfig": {
+            "minSize": 2,
+            "maxSize": 2,
+            "desiredSize": 2
+        },
+        "instanceTypes": [
+            "t4g.micro"
+        ],
+        "subnets": [
+            "subnet-0be898255a7f16638",
+            "subnet-0613b7db02895e68c"
+        ],
+        "amiType": "AL2023_ARM_64_STANDARD",
+        "nodeRole": "arn:aws:iam::738975265234:role/eks-node-role",
+        "labels": {},
+        "resources": {
+            "autoScalingGroups": [
+                {
+                    "name": "eks-demo-node-group-a8cc831b-3f55-58d9-1e0d-3836212a7098"
+                }
+            ]
+        },
+        "diskSize": 20,
+        "health": {
+            "issues": []
+        },
+        "updateConfig": {
+            "maxUnavailable": 1,
+            "updateStrategy": "DEFAULT"
+        },
+        "nodeRepairConfig": {
+            "enabled": false
+        },
+        "tags": {}
+    }
+}
+{
+    "addon": {
+        "addonName": "coredns",
+        "clusterName": "demo",
+        "status": "DELETING",
+        "addonVersion": "v1.12.1-eksbuild.2",
+        "health": {
+            "issues": [
+                {
+                    "code": "InsufficientNumberOfReplicas",
+                    "message": "The add-on is unhealthy because all deployments have all pods unscheduled no nodes available to schedule pods"
+                }
+            ]
+        },
+        "addonArn": "arn:aws:eks:us-east-1:738975265234:addon/demo/coredns/96cc830a-f1b1-e831-1fc5-a9262ef5a99c",
+        "createdAt": "2025-09-01T17:22:02.005000+01:00",
+        "modifiedAt": "2025-09-04T09:12:15.361000+01:00",
+        "tags": {}
+    }
+}
+{
+    "addon": {
+        "addonName": "kube-proxy",
+        "clusterName": "demo",
+        "status": "DELETING",
+        "addonVersion": "v1.33.0-eksbuild.2",
+        "health": {
+            "issues": []
+        },
+        "addonArn": "arn:aws:eks:us-east-1:738975265234:addon/demo/kube-proxy/5acc830a-f1a3-e3b3-c647-3eb651029a77",
+        "createdAt": "2025-09-01T17:22:01.950000+01:00",
+        "modifiedAt": "2025-09-04T09:12:16.921000+01:00",
+        "tags": {}
+    }
+}
+{
+    "addon": {
+        "addonName": "metrics-server",
+        "clusterName": "demo",
+        "status": "DELETING",
+        "addonVersion": "v0.8.0-eksbuild.2",
+        "health": {
+            "issues": [
+                {
+                    "code": "InsufficientNumberOfReplicas",
+                    "message": "The add-on is unhealthy because it doesn't have the desired number of replicas."
+                }
+            ]
+        },
+        "addonArn": "arn:aws:eks:us-east-1:738975265234:addon/demo/metrics-server/d6cc830a-f1bf-b49a-0478-4f1e781d3f4a",
+        "createdAt": "2025-09-01T17:22:02+01:00",
+        "modifiedAt": "2025-09-04T09:12:18.543000+01:00",
+        "tags": {}
+    }
+}
+{
+    "addon": {
+        "addonName": "vpc-cni",
+        "clusterName": "demo",
+        "status": "DELETING",
+        "addonVersion": "v1.19.5-eksbuild.1",
+        "health": {
+            "issues": []
+        },
+        "addonArn": "arn:aws:eks:us-east-1:738975265234:addon/demo/vpc-cni/3acc830a-f1aa-b4e0-33b5-8cf7304b3d29",
+        "createdAt": "2025-09-01T17:22:02.026000+01:00",
+        "modifiedAt": "2025-09-04T09:12:20.090000+01:00",
+        "tags": {}
+    }
+}
+
+An error occurred (ResourceInUseException) when calling the DeleteCluster operation: Cluster has nodegroups attached
+⚠️ Failed to delete EKS cluster demo
+✅ No ECS clusters (or skipped).
+🗄️ ECR: Delete ALL repositories (images will be removed)? (y/N): {
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:738975265234:repository/test-repository",
+        "registryId": "738975265234",
+        "repositoryName": "test-repository",
+        "repositoryUri": "738975265234.dkr.ecr.us-east-1.amazonaws.com/test-repository",
+        "createdAt": "2025-08-30T18:26:57.343000+01:00",
+        "imageTagMutability": "MUTABLE"
+    }
+}
+🖥️ EC2: Terminate ALL instances in us-east-1? (y/N): 
+An error occurred (UnauthorizedOperation) when calling the TerminateInstances operation: You are not authorized to perform this operation. User: arn:aws:iam::738975265234:user/kubernetes is not authorized to perform: ec2:TerminateInstances on resource: arn:aws:ec2:us-east-1:738975265234:instance/i-0e37e8b06da5680f6 with an explicit deny in a resource-based policy. Encoded authorization failure message: xl0KbkwnlMpGJ5DFSHpJNk5KkiA0a1-8-GyX3kw63lOfatEZ74UvzqWqYXJbSIBZNwK06Z55yBlQYVvzQ6E3Nm-DjknrnSo4KaGQ2iUuazovUwsUP6wRo4ba-YvjEDldFU-yDDLt6u_13xO_Juk8siJSnpxcCKGhlKE5n_DmkCbFXJqCIDuzOHKveJfi86T1Z49qUuYWF8kd02372d6Ec-tnW_TTfWVKlSVxTxcGb8kmFnH3bZ5wpyZFvRiO7ss8ILGDMNjtpnyXiK_o2cINPo-IQ8RVDpO5bhpoaFEHMzauDVa36T3nW89Rw0OMSoRJG42G7Ly1IjkDw7SIC5Q_KrWKEKIPsAbqyCbQb5Bx_V-SSlVbp5yFNkQo2w2mHGoO_dZIpZ_DWCK8SMsQZXC_4neyN-wNuHGIEy41or_HGl2v3TIIvZBn2Ps-G8ShBERnJ1ia5Ylzwy-zhU8FE4Y52MdG5TZnj5ooeuPmGWJ0QOkZ9FlX59-hEvmwijfaymQdcvWi3sxgQMHDseAZN6q8m2KBWl5C1VQbbZQ2y5vga3c-tjdqRG9y1noht2cc04hwttsrw2dJfdL2vYxvDiSoOyhHMFvi37ZdE8eCmoi1vz5FzCFoHAOil7vn9iEJ0M8puKCaxmlc6MkmjYmtpFr1lyd1VhLU2qC6MUMvLdI38BKYtYdc09ictLx-iNkE2ea6VPnfaq-7AnSuMP810xWqZjkinvRnMrWyfKGiZikafmexFNXrSHJrtYVIyV42fjKG3Nhzkx9IZQ-XraedtACtGi6Eo-jbUj79DOFCvO5L99idtXUm2iZcun8PiEasya5vUfC0JA_9avlOPYGH4Bbw6h6C-_wmV907gXLE6Fp1wxn_fugAzalk-haghGOsFNj7uYSB0hNZuWhQPJ0udQGSWxRBHt94Ck3vW2tYfPKQj6-rPP5Rse9BIVyQRvhI2LO47qbuGfQJClPPRzoifTqQi584U4wtcBXmLEB0GJYaAqtFdYqElNW8SP-lUHmkgRmFoeFixmENcsSBhqVNbh_HxbBHDQhvmnRzXJ8zWP_-H47FIQmcm4xk-FhElr0l_kYJwoBIgJNVDH3-GRTUZilnc_LKTqz9X0cJ591KGHfyfoPLLiGj1XS4xflVRrhTqlnbZpOcmFVw76LTxMRkQaO_sU4XPXLVF-75va6AHVJ_VpQJa0d7PLAcf4ftH3zVL9OwmgqyfrcY5LjTQlBSWMfW2WdLeWRHdvhnSSOppZkz2PRlua-lN_-_27wQeouAz_ZYKTrmTWJ4VVCf719zmFs76wVMDUyqq8v7PoRnSiCC0iKu1axUBs85T2HwWemIXO5PqSJr8hUuGQAFGRMmGliMrY1Xrp8rV12QssztCjb2BhAUtF5X2VLBV-ksY_QKw29CcIyvk2wPicRXk3pcmf4EHEt69JXqRbpHZPmKfh4wkEP-D2lPDbXM7E35c5NDDFvdmQ-3mbcjKndyNpYF9L_p-ApZy_gC5jCPZdqgAR45P0Dl_PdjkYU28LL_q6TvpK6ujjHgyNU06qkdUH9tnGIJ-kV17lG-NOt-
+⚠️ Terminate call failed.
+📈 AutoScaling: Delete ALL ASGs in us-east-1? (will try to set desired=0) (y/N): 🧾 EC2: Delete ALL Launch Templates in us-east-1? (y/N): {
+    "LaunchTemplate": {
+        "LaunchTemplateId": "lt-0762ddc68588d7fb8",
+        "LaunchTemplateName": "eks-a8cc831b-3f55-58d9-1e0d-3836212a7098",
+        "CreateTime": "2025-09-01T16:57:45+00:00",
+        "CreatedBy": "arn:aws:sts::738975265234:assumed-role/AWSServiceRoleForAmazonEKSNodegroup/EKS",
+        "DefaultVersionNumber": 1,
+        "LatestVersionNumber": 1,
+        "Operator": {
+            "Managed": false
+        }
+    }
+}
+✅ No NAT Gateways (or skipped).
+✅ No EIPs (or skipped).
+💽 Delete ALL unattached EBS volumes in us-east-1? (y/N): 
+An error occurred (InvalidVolume.NotFound) when calling the DeleteVolume operation: The volume 'vol-0170bad9b3e1ccd56' does not exist.
+✅ No ALB/NLB (or skipped).
+✅ Finished regional sweep for us-east-1
+
+🎉 All requested sweeps completed.

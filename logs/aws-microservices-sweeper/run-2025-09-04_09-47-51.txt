@@ -1,0 +1,21 @@
+📜 Logging to ./logs/aws-microservices-sweeper/run-2025-09-04_09-47-51.txt
+🔒 Checking AWS identity...
+🚨 You are logged in as:
+👤 User:       kubernetes
+🔗 ARN:        arn:aws:iam::738975265234:user/kubernetes
+🏢 Account ID: 738975265234
+🌍 Default region: us-east-1
+
+❓ Is this the RIGHT ACCOUNT to sweep potentially billable resources? (y/N): 🌐 Sweep ALL regions? (Recommended if you’re unsure where things are) (y/N): 📍 Gathering regions...
+🗺️ Regions to sweep: ap-south-1	eu-north-1	eu-west-3	eu-west-2	eu-west-1	ap-northeast-3	ap-northeast-2	ap-northeast-1	ca-central-1	sa-east-1	ap-southeast-1	ap-southeast-2	eu-central-1	us-east-1	us-east-2	us-west-1	us-west-2
+
+🧭 Route 53: Delete ALL hosted zones & health checks? (hosted zones cost monthly) (y/N): ./aws-microservices-sweeper.sh: line 177:  ${#HC_IDS[@]:-0} > 0 : bad substitution
+🌍 CloudFront: Disable & DELETE ALL distributions? (y/N): ./aws-microservices-sweeper.sh: line 182:  ${#DISTS[@]:-0} > 0 : bad substitution
+
+=================================================================
+🌎 REGION: ap-south-1
+=================================================================
+🧹 Starting regional sweeps in ap-south-1 ...
+./aws-microservices-sweeper.sh: line 198:  ${#CLUSTERS[@]:-0} > 0 : bad substitution
+
+🎉 All requested sweeps completed.

@@ -1,0 +1,14 @@
+📜 Logging to ./logs/aws-microservices-sweeper/run-2025-09-04_09-07-34.txt
+🔒 Checking AWS identity...
+🚨 You are logged in as:
+👤 User:       kubernetes
+🔗 ARN:        arn:aws:iam::738975265234:user/kubernetes
+🏢 Account ID: 738975265234
+🌍 Default region: us-east-1
+
+❓ Is this the RIGHT ACCOUNT to sweep potentially billable resources? (y/N): 🌐 Sweep ALL regions? (Recommended if you’re unsure where things are) (y/N): 🗺️ Regions to sweep: us-east-1
+
+🧭 Route 53: Delete ALL hosted zones & health checks? (hosted zones cost monthly) (y/N): ✅ No health checks.
+✅ No hosted zones.
+🌍 CloudFront: Disable & DELETE ALL distributions? (y/N): ✅ No CloudFront distributions.
+./aws-microservices-sweeper.sh: line 331: syntax error: unexpected end of file
